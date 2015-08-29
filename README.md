@@ -5,9 +5,7 @@ be used to make clinets aware that some computing is still happening
 in background. Symbol and delay in miliseconds can be defined at class
 initalization or set at any time.
 
-##examples:
-
-###1
+##Examples:
 ```python
 from dotting import Dotter
 from time import sleep
@@ -16,7 +14,6 @@ d.start()
 sleep(3)
 d.stop()
 ```
-###2
 ```py
 from dotting import Dotter
 from time import sleep
