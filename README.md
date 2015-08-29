@@ -8,14 +8,16 @@ initalization or set at any time.
 ##examples:
 
 ###1
+'''python
 from dotting import Dotter
 from time import sleep
 d=Dotter()
 d.start()
 sleep(3)
 d.stop()
-
+'''
 ###2
+'''python
 from dotting import Dotter
 from time import sleep
 d=Dotter(200,',')
@@ -24,3 +26,4 @@ sleep(2)
 d.set(symbol='.')
 sleep(3)
 d.stop()
+'''
