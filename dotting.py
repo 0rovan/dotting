@@ -25,14 +25,11 @@ class Dotter(object):
             if newLine:
                 stdout.write('\n')
             self.status=False
-    def __restart(self):
-        self.stop(False)
-        self.start()
     def set(self,delay=None,symbol=None):
         if delay!=None:
             self.delay=delay
-            self.delay=delay
         if symbol!=None:
             self.symbol=symbol
-            self.symbol=symbol
-        self.__restart()
+        if self.status==True:
+            self.stop(False)
+            self.start()
